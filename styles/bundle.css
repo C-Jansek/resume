@@ -1,0 +1,115 @@
+* {
+  font-family: "Fira Sans";
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.icon {
+  width: 1em;
+}
+
+body {
+  margin: 2rem 4rem;
+}
+
+hr {
+  border: 1px solid #110f16;
+  margin: 4rem 0;
+}
+
+header,
+section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+section .content > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+header img {
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 15rem;
+  border-radius: 50%;
+}
+header .person-info {
+  display: flex;
+  flex-direction: column;
+}
+header .person-info h1 {
+  flex-shrink: 0;
+  flex-grow: 0;
+  font-size: 4rem;
+  font-weight: 700;
+}
+header .person-info h2 {
+  flex-shrink: 0;
+  flex-grow: 0;
+  font-size: 2rem;
+  font-weight: 200;
+}
+header .person-info .contact-info {
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-content: center;
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5em 1.2em;
+}
+header .person-info .contact-info li {
+  display: flex;
+  gap: 0.4em;
+}
+header .person-info .contact-info li a {
+  text-decoration: none;
+}
+
+#work .content > ul {
+  list-style: none;
+}
+#work .content > ul > li:not(:last-child) {
+  margin-bottom: 4rem;
+}
+#work .work-tasks {
+  padding-left: 2em;
+}
+#work .work-meta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#work .work-meta .work-function {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+#work .work-meta .work-location {
+  grid-column: 2;
+  grid-row: 1;
+  font-style: italic;
+}
+#work .work-meta .work-period {
+  grid-column: 2;
+  grid-row: 2;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=bundle.css.map */
