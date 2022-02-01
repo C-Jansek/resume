@@ -10,7 +10,7 @@
 
     <body>
         <header>
-            <img src="./img/profile.jpg" />
+            <img class="profile-picture" src="./img/profile.jpg" />
             <div class="person-info">
                 <h1>Christiaan Janssen</h1>
                 <h2>Full-stack Developer</h2>
@@ -100,8 +100,13 @@
                                 />
                                 Delft, Zuid-Holland</span
                             >
-                            <span class="work-period"
-                                >Oct 2019 - April 2021 & <br />Oct 2021 -
+                            <span class="work-period">
+                                <img
+                                    src="./img/icons/calender-stats.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                Oct 2019 - April 2021 & <br />Oct 2021 -
                                 Present</span
                             >
                         </div>
@@ -131,6 +136,22 @@
                             <span class="work-function"
                                 >Volunteer webmaster</span
                             >
+                            <span class="work-location">
+                                <img
+                                    src="./img/icons/map-pin.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                Gouda, Zuid-Holland</span
+                            >
+                            <span class="work-period">
+                                <img
+                                    src="./img/icons/calender-stats.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                Nov 2020 - present</span
+                            >
                         </div>
                         <p class="work-description">
                             A & CKV Gemini is a small korfballclub with around
@@ -145,6 +166,79 @@
                                 data.
                             </li>
                         </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="projects">
+            <h1 class="title">Projects</h1>
+            <div class="content">
+                <ul>
+                    <li>
+                        <h2 class="project-title">Advent of Code</h2>
+                        <ul class="project-tags">
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>Algorithms & Data Structures</li>
+                        </ul>
+                        <p>
+                            Advent of Code is a yearly programming contest in
+                            December, made by Eric Wastl and hosted on
+                            <a href="https://adventofcode.com"
+                                >adventofcode.com</a
+                            >. The contest consist of 25 daily programming
+                            puzzles. Each puzzle consists of two parts: the
+                            first part will introduce the problem and is gives a
+                            hint to how the problem can be tackled. The second
+                            part will either continue building on the first
+                            part, or you will meet a barrier in you approach
+                            that does not cover the changed problem.
+                        </p>
+                        <p>
+                            I have competed in both 2020 and 2021. In 2020 my
+                            programming language of choice was JavaScript, for
+                            2021 I switched to TypeScript with a custom
+                            environment, using a forked CLI to get personal
+                            input from the website.
+                        </p>
+                        <p>
+                            Advent of Code has helped me practice implementing
+                            different data structures and algorithms. It helped
+                            improve my coding fundamentals and to think outside
+                            of the box. An acquaintance did code reviews on the
+                            more difficult problems to help me point out areas
+                            to improve.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="project-title">Korfball stats</h2>
+                        <ul class="project-tags">
+                            <li>Java</li>
+                            <li>Android Studio</li>
+                        </ul>
+                        <p>
+                            With a new coach at the korfball club came a more
+                            analytical approach to the matches. Recording
+                            matches and logging statistics about scoring rates.
+                            In my opinion this was a big improvement, using data
+                            easily available to influence your decisions. But
+                            tallying scoring attempts and goals on a piece of
+                            paper, that wasn’t my thing.
+                        </p>
+                        <p>
+                            Using Adobe XD I made a wireframe and I wrote down
+                            some specifications about the application. In my
+                            spare time I build out the app in Java using Android
+                            Studio and sideloaded the application on my phone. A
+                            couple matches later, I was able to use the
+                            application to record the data. The big advantage
+                            was that the app would output a CSV file that could
+                            be used to visualize the data, no more counting
+                            lines or furiously deciphering handwriting.
+                        </p>
                     </li>
                 </ul>
             </div>

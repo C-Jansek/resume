@@ -32,19 +32,29 @@ header,
 section {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 section .content > *:not(:last-child) {
   margin-bottom: 2rem;
 }
+section .content > ul {
+  list-style: none;
+}
+section .content > ul > li {
+  margin-bottom: 4rem;
+}
+section .content > ul > li > * {
+  margin-bottom: 1rem;
+}
 
-header img {
+header .profile-picture {
   align-self: center;
-  justify-self: center;
+  justify-self: flex-end;
   width: 100%;
   max-width: 15rem;
   border-radius: 50%;
+  margin-right: calc(5vw - 4rem);
 }
 header .person-info {
   display: flex;
@@ -82,34 +92,55 @@ header .person-info .contact-info li a {
   text-decoration: none;
 }
 
-#work .content > ul {
-  list-style: none;
-}
-#work .content > ul > li:not(:last-child) {
-  margin-bottom: 4rem;
-}
 #work .work-tasks {
   padding-left: 2em;
+}
+#work .work-tasks li {
+  margin-bottom: 0.25em;
 }
 #work .work-meta {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 0.5em 1em;
 }
 #work .work-meta .work-function {
   grid-column: 1;
   grid-row: 2;
   font-size: 1.5rem;
   font-weight: 200;
+  text-transform: uppercase;
 }
 #work .work-meta .work-location {
   grid-column: 2;
   grid-row: 1;
   font-style: italic;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-weight: 200;
 }
 #work .work-meta .work-period {
   grid-column: 2;
   grid-row: 2;
   font-style: italic;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-weight: 200;
+}
+
+#projects .project-tags {
+  margin-top: -0.5rem;
+  color: gray;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5em 1.2em;
+}
+#projects .project-tags li:not(:first-child)::before {
+  content: "|";
+  margin-right: 1.2em;
 }
 
 /*# sourceMappingURL=bundle.css.map */

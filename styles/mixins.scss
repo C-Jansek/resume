@@ -1,5 +1,11 @@
 @mixin column-split {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+@mixin icon-align-left {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
 }
